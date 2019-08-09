@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 # farspackage
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.com/MagdyLaban/Building_R_Packages_Coursera.svg?branch=master)](https://travis-ci.com/MagdyLaban/Building_R_Packages_Coursera)
+[![Travis build status](https://travis-ci.org/MagdyLaban/Building_R_Packages_Coursera.svg?branch=master)](https://travis-ci.org/MagdyLaban/Building_R_Packages_Coursera)
 <!-- badges: end -->
 
 ```{r setup}
@@ -37,3 +37,4 @@ The **fars_summarize_years(years)** function summarizes accidents for the specif
 
 * ## Plotting
 To plot the data for the specified state in the specified year you have to use the **fars_map_state(state.num, year)** function . **state.num** represents the state number and it takes a numeric value and **year** represents which year the accidents had token place and it is a numeric value .
+
