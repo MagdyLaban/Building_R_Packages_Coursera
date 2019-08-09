@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_read_years}
 \alias{fars_read_years}
-\title{read data for specific year}
+\title{fars_read_years}
 \usage{
 fars_read_years(years)
 }

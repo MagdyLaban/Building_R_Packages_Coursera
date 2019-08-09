@@ -1,6 +1,6 @@
-#' fars_read
+#' @title fars_read
 #'
-#' this function is for reading the a data frame or csv file and return a tibble data frame
+#' @description this function is for reading the a data frame or csv file and return a tibble data frame
 #'
 #' @param filename it is the path for the csv file or the data you want to read through
 #'
@@ -25,9 +25,9 @@ fars_read <- function(filename) {
   dplyr::tbl_df(data)
 }
 
-#' file name with a specific year
+#' @title file_name
 #'
-#' This function creates a file name for a particular year .
+#' @description This function creates a file name for a particular year .
 #'
 #' @param year it refers to a year which you want to creat file name with.
 #' it has to be a number or a string that contain a numer or it will end up with
@@ -49,9 +49,9 @@ make_filename <- function(year) {
   sprintf("accident_%d.csv.bz2", year)
 }
 
-#' read data for specific year
+#' @title fars_read_years
 #'
-#' this function reads an information about provided list of years through \code{years}
+#' @description this function reads an information about provided list of years through \code{years}
 #'
 #' @param years represents a vector or a list containing years which should data be
 #' extracted from
@@ -82,9 +82,9 @@ fars_read_years <- function(years) {
   })
 }
 
-#' Summarize specific years data
+#' @title fars_summarize_years
 #'
-#' This function summarizes the data of the year and provide the number of accidents
+#' @description This function summarizes the data of the year and provide the number of accidents
 #'
 #' @inheritParams fars_read_years
 #'
@@ -110,9 +110,9 @@ fars_summarize_years <- function(years) {
     dplyr::summarize(n = n()) %>%
     tidyr::spread(year, n)
 }
-#' map for accidents
+#' @title fars_map_state
 #'
-#' This function gives a representation on a map for the accidents on a specific state
+#' @description This function gives a representation on a map for the accidents on a specific state
 #' and year
 #'
 #' @param state.num This is the number of the state and it must be a numerical value
@@ -125,6 +125,9 @@ fars_summarize_years <- function(years) {
 #' @return it returns a graphical representation for the accidents in the \code{state.num}
 #' during \code{year}
 #'
+#' @importFrom dplyr filter
+#' @importFrom graphics points
+#' @importFrom maps map
 #' @examples
 #' \dontrun{
 #' map <- fars_map_state(state.num = 14 ,year = 2015)

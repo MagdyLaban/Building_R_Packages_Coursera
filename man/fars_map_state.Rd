@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_map_state}
 \alias{fars_map_state}
-\title{map for accidents}
+\title{fars_map_state}
 \usage{
 fars_map_state(state.num, year)
 }

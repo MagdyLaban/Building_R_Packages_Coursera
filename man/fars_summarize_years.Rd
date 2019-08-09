@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_functions.R
 \name{fars_summarize_years}
 \alias{fars_summarize_years}
-\title{Summarize specific years data}
+\title{fars_summarize_years}
 \usage{
 fars_summarize_years(years)
 }

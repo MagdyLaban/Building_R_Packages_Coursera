@@ -1,6 +1,6 @@
 test_that("filename validation", {
-    fn <- make_filename(2013)
-    df <- fars_read(fn)
-    expect_that(df, is_a('tbl_df'))
-    expect_that(nrow(df), is_more_than(0))
+    filename <- make_filename(2015)
+    dataframe <- fars_read(filename)
+    expect_that(dataframe, is_a("tbl_df"))
+    expect_that(nrow(dataframe), is_more_than(0))
 })
