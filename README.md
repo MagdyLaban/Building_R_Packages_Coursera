@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Travis build
-status](https://travis-ci.org/MagdyLaban/Building_R_Packages_Coursera.svg?branch=master)](https://travis-ci.org/MagdyLaban/Building_R_Packages_Coursera)
+status](https://travis-ci.com/MagdyLaban/Building_R_Packages_Coursera.svg?branch=master)](https://travis-ci.com/MagdyLaban/Building_R_Packages_Coursera)
 <!-- badges: end -->
 
 ``` r
